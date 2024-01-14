@@ -10,24 +10,25 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
-  id        String     @id @default(uuid())
-  name      String
-  email     String     @unique
-  createdAt DateTime   @default(now())
-  updatedAt DateTime   @updatedAt
-  Contacts  Contacts[]
-
-  @@map("users")
-}
-
-model Contacts {
+model Categories {
   id     String @id @default(uuid())
   name   String
-  email  String
-  phone  String
-  userId String
-  user   User   @relation(fields: [userId], references: [id])
+  parentId  String
+   parentCategory   Categories?  @relation("CategoriesHierarchy", fields: [parentId], references: [id])
+  nestedCategories Categories[] @relation("CategoriesHierarchy")
+  products Products[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  @@map("categories")
+}
 
-  @@map("contacts")
+model Products {
+  id     String @id @default(uuid())
+  name   String
+ 
+  categories Categories?  @relation(fields : [categoryId], references: [id])
+  categoryId  String
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  @@map("products")
 }

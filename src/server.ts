@@ -1,14 +1,16 @@
 import Fastify from 'fastify';
-import { contactsRoutes } from './routes/contact.routes';
-import { userRoutes } from './routes/user.routes';
+import { categoriesRoutes } from './routes/category.routes';
+import { productsRoutes } from './routes/product.routes';
+
 const app = Fastify();
 
-app.register(userRoutes, {
-  prefix: '/users',
+app.register(productsRoutes, {
+  prefix: '/products',
 });
-app.register(contactsRoutes, {
-  prefix: '/contacts',
+app.register(categoriesRoutes, {
+  prefix: '/categories',
 });
+
 
 app.listen({ port: 3100 }, () => {
   console.log('Server listening on port 3100');
