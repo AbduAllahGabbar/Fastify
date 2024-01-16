@@ -1,6 +1,5 @@
 Arguments: 
   /Users/alexiakattah/.nvm/versions/node/v18.16.1/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js add fastify-express-json
-
 PATH: 
   /Users/alexiakattah/.nvm/versions/node/v18.16.1/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/alexiakattah/.local/share/zinit/polaris/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/alexiakattah/.cargo/bin
 
