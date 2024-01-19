@@ -1,21 +1,28 @@
 A simplified project about categories and products
 
+## Download Tools
+
+- Download Nodejs ( node, npm  , npx) https://nodejs.org/en/download 
+- Download git https://git-scm.com/download/win
+- Download Postman https://www.postman.com/downloads/
+
 ## Fast Startup
 
-- Download Startup Template
+- Download and run application
 
 ```sh
-    git clone https://github.com/AbduAllahGabbar/Fastify.git
+    git clone https://github.com/AbduAllahGabbar/Fastify.git ## download source code
     cd Fastify
-    npm i
-    npm run dev
+    npm i ## install all libs
+    npm run dev ## run application
 ```
 
-## To Connect DB
+## To Connect MySQL DataBase
 
 - Open another terminal
 - Run `npx prisma studio`
-- manage your db from http://localhost:5555
+- manage your database from browser :  http://localhost:5555
+
 
 ## Request Parameters [GET , POST | PUT | Delete] Restful API From Postman
 
@@ -31,7 +38,7 @@ A simplified project about categories and products
   //Sample Body 
   {
     "name": "Category 1",
-    "parentId": "b0a7b2c7-e93d-4e99-88b2-740e9367233d"
+    "parentId": "0"
   }
   ```
 
