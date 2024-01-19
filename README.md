@@ -2,8 +2,8 @@ A simplified project about categories and products
 
 ## Download Tools
 
-- Download Nodejs ( node, npm  , npx) https://nodejs.org/en/download 
-- Download git https://git-scm.com/download/win
+- Download Nodejs ( node , npm , npx ) https://nodejs.org/en/download 
+- Download Git https://git-scm.com/download/win
 - Download Postman https://www.postman.com/downloads/
 
 ## Fast Startup
@@ -12,7 +12,7 @@ A simplified project about categories and products
 
 ```sh
     git clone https://github.com/AbduAllahGabbar/Fastify.git ## download source code
-    cd Fastify
+    cd Fastify ## to enter the project folder
     npm i ## install all libs
     npm run dev ## run application
 ```
