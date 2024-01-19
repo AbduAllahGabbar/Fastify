@@ -36,6 +36,7 @@ export async function categoriesRoutes(fastify: FastifyInstance) {
     async (req, reply) => {
       const { id } = req.params;
       const { name, parentId } = req.body;
+      
       try {
         const data = await categoryUseCase.updateCategory({
           id,

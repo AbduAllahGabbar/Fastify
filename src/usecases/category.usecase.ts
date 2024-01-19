@@ -26,13 +26,14 @@ class CategoryUseCase {
 
     return category;
   }
-  async listAllCategories() {
 
+  async listAllCategories() {
 
     const categories = await this.categoryRepository.findAllCategories();
 
     return categories;
   }
+  
   async updateCategory({ id, name, parentId }: Category) {
     const data = await this.categoryRepository.updateCategory({
       id,
@@ -42,6 +43,7 @@ class CategoryUseCase {
 
     return data;
   }
+  
   async delete(id: string) {
     const data = await this.categoryRepository.delete(id);
 

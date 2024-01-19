@@ -1,10 +1,4 @@
-/*
-  Warnings:
 
-  - Added the required column `userId` to the `categories` table without a default value. This is not possible if the table is not empty.
-
-*/
--- RedefineTables
 PRAGMA foreign_keys=OFF;
 CREATE TABLE "new_categories" (
     "id" TEXT NOT NULL PRIMARY KEY,

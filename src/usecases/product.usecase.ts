@@ -18,7 +18,7 @@ import {
       const category = await this.categoryRepository.findById(categoryId);
 
       if (!category) {
-        throw new Error('User not found');
+        throw new Error('Category not found');
       }
       const product = await this.productRepository.create({
         name,
