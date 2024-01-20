@@ -1,15 +1,16 @@
 {
   "name": "agendas",
   "version": "1.0.0",
-  "description": "Esta é a documentação de requisitos para a API de Agenda de Contatos. Esta API permite aos usuários gerenciar contatos, categorizá-los e realizar operações de CRUD.",
+  "description": "This project",
   "main": "index.js",
   "type": "module",
   "engines": {
     "node": "18.16.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc --sourceMap -p ./",
+    "migration": "npx prisma generate"
   },
   "keywords": [],
   "author": "",

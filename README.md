@@ -1,10 +1,12 @@
 A simplified project about categories and products
 
+
 ## Download Tools
 
 - Download Nodejs ( node , npm , npx ) https://nodejs.org/en/download 
 - Download Git https://git-scm.com/download/win
 - Download Postman https://www.postman.com/downloads/
+
 
 ## Fast Startup
 
@@ -17,11 +19,17 @@ A simplified project about categories and products
     npm run dev ## run application
 ```
 
-## To Connect MySQL DataBase
+
+## To Open MySQL DataBase Manager
 
 - Open another terminal
 - Run `npx prisma studio`
 - manage your database from browser :  http://localhost:5555
+
+
+## To Test API`S on postman
+
+- open file `Fastify.postman_collection.json` in postman application
 
 
 ## Request Parameters [GET , POST | PUT | Delete] Restful API From Postman
@@ -57,6 +65,7 @@ A simplified project about categories and products
   Returns the number of products related with the category in the { "_count":
   {"products": 0} }
   ```
+
 
 - Api for `Products`
 
